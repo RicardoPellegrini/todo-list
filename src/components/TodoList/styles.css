@@ -1,7 +1,6 @@
 ul {
-    margin-top: -9px;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
 }

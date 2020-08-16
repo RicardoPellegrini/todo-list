@@ -4,21 +4,18 @@
     display: flex;
     flex-direction: column;
     padding: 50px;
-    width: 1000px;
-    min-height: 800px;
-    background-image: url('C:/Users/ricar/web_dev/todo_list/src/assets/background.jpg');
+    width: 60vw;
+    height: 100vh;
     justify-content: flex-start;
-    margin: auto;
-    border-radius: 50px;
+    align-items: center;
+    margin: 20px auto;
     position: relative;
-    overflow: hidden;
 }
 
 .App-header {
     position: absolute;
-    width: 90%;
-    top: 10%;
-    left: 15%;
+    width: 85%;
+    left: 10%;
 }
 
 .App-header p{
@@ -27,4 +24,18 @@
     font-weight: 800;
     padding: 25px;
     color: #0088cc;   
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.clearAll button {
+    background-color: crimson;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
 }

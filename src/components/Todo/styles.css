@@ -1,18 +1,19 @@
 
 
 .todo {
-    width: 90%;
     display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #c8c8c8 45%, #646464 100%);
     align-items: center;
     box-sizing: border-box;
 }
 
 .todo button {
     background-color: white;
-    position: relative;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    width: 80px;
+    border-radius: 10px;
 }
 
 .todo button:focus {
@@ -37,6 +38,6 @@
 }
 
 .todo button img {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }

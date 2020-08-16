@@ -23,8 +23,9 @@ function TodoForm({ addTodo }) {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} autoComplete="off">
             <input
+                maxLength="35"
                 name="task"
                 placeholder="What is your next task?"
                 type="text"

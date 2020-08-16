@@ -29,6 +29,10 @@ function App() {
     setTodos(todos.filter(todo => todo.id !== id))
   }
 
+  function clearAll(){
+    setTodos([])
+  }
+
   function toggleComplete(id){
     setTodos(
       todos.map(todo => {
@@ -46,7 +50,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>To-Do List</p>
-        <TodoForm addTodo={addTodo}/>
+        <div className="buttons">
+          <TodoForm addTodo={addTodo}/>
+          <div className="clearAll">
+            <button type="button" onClick={clearAll}>Clear all</button>
+          </div>
+        </div>
         <TodoList todos={todos} toggleComplete={toggleComplete} removeTodo={removeTodo}/>
       </header>
     </div>
